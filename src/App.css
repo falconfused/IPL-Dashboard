@@ -1,4 +1,5 @@
 .App {
+  /* background-image: url("https://images.unsplash.com/photo-1519680772-3b7b1b0b1b0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"); */
   text-align: center;
 }
 
@@ -32,7 +33,262 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+body {}
+
+
+.TeamList {
+  background-image: url("https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+  /* height: 100%; */
+}
+
+.team-list-container {
+  display: flex;
+  height: 100%;
+
+  /* background-size: cover; */
+  /* height: 100vh; */
+  flex-direction: column;
+
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px;
+}
+
+.team-item {
+  text-decoration: none;
+
+
+}
+
+.team-item div {
+  text-decoration: none;
+  width: 300px;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.team-list-container h1 {
+  color: white;
+  font-size: 50px;
+
+  margin: 20px;
+}
+
+.team-item img {
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 60px;
+  height: 90px;
+}
+
+.team-item p {
+  font-size: 20px;
+  color: white;
+}
+
+
+.Loader {
+  /* display: flex; */
+  /* width: 100vw;
+  height: 100vh; */
+
+
+  /* height: 100vh; */
+}
+
+.loader{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.latest-match-card {
+  background-color: #0F172A;
+  /* width: 70%; */
+  color: white;
+  align-items: center;
+  /* margin: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.latest-match-card img {
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+
+}
+
+.latest-match-details {
+
+  background-color: #0F172A;
+  /* width: 1000px; */
+  width: 80%;
+  /* height: 500px; */
+  display: flex;
+  border-radius: 12px;
+  margin: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.latest-match-details img {
+  width: 200px;
+  margin: 10px;
+  height: 200px;
+}
+
+.latest-match-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-banner {
+  width: 80%;
+  border-radius: 12px;
+  margin: 50px;
+  /* height: 90%; */
+}
+
+
+
+.latest-match-innings-details {
+  color: white;
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  align-items: end;
+  align-items: center;
+  /* background-color: #0F172A; */
+
+}
+
+.latest-match-card-text h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.latest-match-card-text p {
+  font-size: 1.1em;
+  /* margin-bottom: 40px; */
+}
+
+.LatestMatch {
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+.last-matches {
+  width: 80%;
+
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.last-match-card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  display: flex;
+  background-color: #0F172A;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 300px;
+}
+
+.last-match-card img {
+  width: 180px;
+  height: 200px;
+}
+
+.Lost {
+  color: red;
+}
+
+.Won {
+  color: green;
+}
+
+.hey {
+  background: linear-gradient(to bottom, red, black);
+  /* background-color: #0F172A; */
+}
+
+
+@media(max-width:650px) {
+  .latest-match-innings-details {
+    font-size: 12px;
+
+  }
+
+.latest-match-details{
+  font-size: 12px;
+}
+
+}
+.not-found{
+  color: white;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png");
+  background-repeat: no-repeat;
+  overflow: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
