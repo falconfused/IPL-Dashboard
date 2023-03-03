@@ -4,7 +4,7 @@ class PageNotFound extends Component {
         return (
             <div className="loader not-found">
 
-                <h1 className="not-found-heading">Page Not Found</h1>
+                <h1 >Page Not Found</h1>
 
             </div>
         );
